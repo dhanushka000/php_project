@@ -1,0 +1,294 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+ /* some variables */
+   
+   :root {
+      --main-color:#d3ad7f;
+      --black:#13131a;
+      --bg:#010103;
+      --border:.1rem solid rgba(255,255,255,.3);
+      
+      }
+*{
+   font-family : "poppins", sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+  }
+
+html{
+   font-size: 6.5%;
+   overflow-x:hidden ;
+   scroll-padding-top: 5rem;
+   scroll-behavior: smooth;
+}
+html ::-webkit-scrollbar{
+   width: .3rem;
+}
+html ::-webkit-scrollbar-track{
+   background: transparent;
+}
+html ::-webkit-scrollbar-thumb{
+   background: #fff;
+   border-radius: 5rem;
+}
+body{
+   background: var(--bg);
+  
+}
+section{
+
+   padding: 2rem 7%;
+}
+.heading{
+   text-align: center;
+   color: #fff;
+   text-transform: uppercase;
+   padding-bottom: 3.5rem;
+   font-size: 30rem;
+
+}
+.heading span{
+   color:var(--main-color);
+   text-transform: uppercase;
+
+}
+
+
+
+
+
+
+
+
+.btn{
+   margin-top: 6rem;
+   display: inline-block;
+   padding: 4rem 8rem;
+   font-size: 15rem;
+   color: #fff;
+   background: var(--main-color);
+   cursor: pointer;
+
+}
+.btn:hover{
+letter-spacing: .2rem;
+}
+
+.header{
+   background: var(--bg);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding:1.5rem 7%;
+   border-bottom: var(--border);
+   position: fixed;
+   top: 0; left: 0; right: 0;
+   z-index: 1000;
+}
+
+.header .logo img{
+   height: 70rem;
+ 
+}
+.header .navbar a{
+   margin: 0 5rem;
+   font-size: 16rem;
+   color: #fff;
+   
+
+}
+.header .navbar a:hover{
+   color: var(--main-color);
+   border-bottom:1rem solid var(--main-color);
+   padding-bottom: .5rem;
+}
+
+.header .icons div{
+   color: #fff;
+   cursor: pointer;
+   font-size: 2.5rem;
+   margin-left: 2rem;
+}
+.header .icons div:hover{
+   color: var(--main-color);
+
+}
+#menu-btn{
+   display: none;
+}
+
+
+ .home{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   background: url(https://img.freepik.com/premium-photo/flat-lay-cup-green-tea-black-background_883947-1.jpg?w=826)no-repeat;
+   background-size: cover;
+   background-position: center;
+
+}
+
+
+
+.about .row{
+   display: flex;
+   align-items: center;
+   background: var(--black);
+   flex-wrap: wrap;
+}
+
+.about .row .image{
+   flex: 1 1 500rem;
+}
+
+.about .row .image img{
+   width:100%;
+}
+.about .row .image{
+   flex: 1 1  500rem;
+   padding: 7rem;
+}
+
+.about .row .content h3{
+   font-size: 30rem;
+   color: #fff;
+
+}
+
+.about .row .content p{
+   font-size: 15rem;
+   color: #ccc;
+   padding: 3rem ;
+   line-height: 1.8;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+media queries
+
+/* Large Devices (desktops, 1024px and above) */
+@media (max-width: 1200px) {
+   .heading {
+     font-size: 25rem;
+   }
+   .btn {
+     padding: 3rem 6rem;
+     font-size: 12rem;
+   }
+   .header .navbar a {
+     margin: 0 3rem;
+     font-size: 14rem;
+   }
+ }
+ 
+ /* Medium Devices (tablets, 768px to 1023px) */
+ @media (max-width: 1024px) {
+   .heading {
+     font-size: 20rem;
+   }
+   .btn {
+     padding: 2rem 5rem;
+     font-size: 10rem;
+   }
+   .header .navbar a {
+     margin: 0 2rem;
+     font-size: 12rem;
+   }
+   .about .row {
+     flex-direction: column;
+   }
+   .about .row .content, .about .row .image {
+     padding: 5rem;
+   }
+ }
+ 
+ /* Small Devices (mobile, 767px and below) */
+ @media (max-width: 767px) {
+   html {
+     font-size: 5.5%;
+   }
+   .heading {
+     font-size: 15rem;
+   }
+   .btn {
+     padding: 2rem 4rem;
+     font-size: 8rem;
+   }
+   .header .logo img {
+     height: 50rem;
+   }
+   .header .navbar a {
+     margin: 0 1.5rem;
+     font-size: 10rem;
+   }
+   .about .row .content p {
+     font-size: 12rem;
+   }
+ }
+ 
+ /* Extra Small Devices (phones, 480px and below) */
+ @media (max-width: 480px) {
+   html {
+     font-size: 5%;
+   }
+   .heading {
+     font-size: 10rem;
+   }
+   .btn {
+     padding: 1.5rem 3rem;
+     font-size: 6rem;
+   }
+   .header .navbar a {
+     font-size: 8rem;
+     margin: 0 1rem;
+   }
+   .about .row .content p {
+     font-size: 10rem;
+   }
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
